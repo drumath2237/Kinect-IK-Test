@@ -40,6 +40,8 @@ public class KinectJointController : MonoBehaviour
             SetBoneTransform(j_leftfoot, Kinect.JointType.AnkleLeft);
             SetBoneTransform(j_rightfoot, Kinect.JointType.AnkleRight);
             SetBoneTransform(j_SpineBase, Kinect.JointType.SpineBase);
+
+            CorrectJointRotations();
         }
     }
 
@@ -68,5 +70,14 @@ public class KinectJointController : MonoBehaviour
         obj.transform.rotation = Vec4ToQ(type);
 
         obj.name = type.ToString();
+    }
+
+    void CorrectJointRotations()
+    {
+        j_lefthand.transform.rotation *= Quaternion.AngleAxis(-90, new Vector3(1, 0, 0)) * Quaternion.AngleAxis(90, new Vector3(0, 0, 1));
+        j_righthand.transform.rotation *= Quaternion.AngleAxis(-90, new Vector3(1, 0, 0)) * Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
+
+        j_leftfoot.transform.rotation *= Quaternion.AngleAxis(180, new Vector3(0, 0, 1)) * Quaternion.AngleAxis(-90, new Vector3(0, 1, 0));
+        j_rightfoot.transform.rotation *= Quaternion.AngleAxis(-180, new Vector3(0, 0, 1)) * Quaternion.AngleAxis(90, new Vector3(0, 1, 0));
     }
 }

@@ -8,6 +8,7 @@ public class AvatarIKController : MonoBehaviour
 {
     public Transform LeftHand, RightHand;
     public Transform LeftFoot, RightFoot;
+    public Transform SpineBase;
 
     private Animator animator;
 
@@ -44,6 +45,12 @@ public class AvatarIKController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = new Vector3(
+            SpineBase.position.x,
+            transform.position.y,
+            SpineBase.position.z
+        );
+
+        transform.rotation = Quaternion.Euler(0, SpineBase.transform.rotation.y, 0) * Quaternion.AngleAxis(180, new Vector3(0, 1, 0));
     }
 }

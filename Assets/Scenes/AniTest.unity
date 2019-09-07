@@ -578,6 +578,11 @@ PrefabInstance:
       propertyPath: RightFoot
       value: 
       objectReference: {fileID: 1714451409}
+    - target: {fileID: 1289599498370516492, guid: 7f608c2cc20ba124e960c67f8bf5a2b7,
+        type: 3}
+      propertyPath: SpineBase
+      value: 
+      objectReference: {fileID: 1228186067}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f608c2cc20ba124e960c67f8bf5a2b7, type: 3}
 --- !u!1001 &1228186062
@@ -652,6 +657,12 @@ PrefabInstance:
 --- !u!1 &1228186063 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2212801917102012057, guid: 939ee14b1f6fb194db6e7a258a1c0721,
+    type: 3}
+  m_PrefabInstance: {fileID: 1228186062}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1228186067 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 950819993884521937, guid: 939ee14b1f6fb194db6e7a258a1c0721,
     type: 3}
   m_PrefabInstance: {fileID: 1228186062}
   m_PrefabAsset: {fileID: 0}
