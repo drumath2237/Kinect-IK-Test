@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -162,7 +162,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 21.3
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -187,13 +187,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532582218}
-  m_LocalRotation: {x: 0.06577725, y: -0, z: -0, w: 0.9978344}
-  m_LocalPosition: {x: -0.26, y: 0.07, z: -4.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.00917007, y: -0, z: -0, w: 0.999958}
+  m_LocalPosition: {x: -0.26, y: -0.34, z: -16.87}
+  m_LocalScale: {x: 0.5136706, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 7.543, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.051, y: 0, z: 0}
 --- !u!1 &603135894 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2212801917102012057, guid: 939ee14b1f6fb194db6e7a258a1c0721,
