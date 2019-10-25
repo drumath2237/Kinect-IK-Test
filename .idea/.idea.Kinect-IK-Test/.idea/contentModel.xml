@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\User\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\User\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Kinect-IK-Test.1512836861.00" t="ExcludeRecursive" />
-    <e p="D:\kaito's file\programs\Kinect-IK-Test" t="IncludeRecursive">
+    <e p="C:\Users\2237k\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\2237k\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Kinect-IK-Test.-1344904535.00" t="ExcludeRecursive" />
+    <e p="D:\kaitoFolder\programs\Kinect-IK-Test" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -153,6 +153,7 @@
           <e p="MToon" t="Include">
             <e p="MToon" t="Include">
               <e p="Editor" t="Include">
+                <e p="EditorUtils.cs" t="Include" />
                 <e p="MToonInspector.cs" t="Include" />
               </e>
               <e p="Resources" t="Include">
@@ -167,6 +168,35 @@
                 <e p="Enums.cs" t="Include" />
                 <e p="MToonDefinition.cs" t="Include" />
                 <e p="Utils.cs" t="Include" />
+                <e p="UtilsGetter.cs" t="Include" />
+                <e p="UtilsSetter.cs" t="Include" />
+                <e p="UtilsVersion.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="ShaderProperty" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ShaderPropMenu.cs" t="Include" />
+            </e>
+            <e p="Runtime" t="Include">
+              <e p="GLTF" t="Include">
+                <e p="PreExportShaders_GLTF.cs" t="Include" />
+                <e p="Standard.cs" t="Include" />
+                <e p="UniGLTF_UniUnlit.cs" t="Include" />
+                <e p="Unlit_Color.cs" t="Include" />
+                <e p="Unlit_Texture.cs" t="Include" />
+                <e p="Unlit_Transparent.cs" t="Include" />
+                <e p="Unlit_Transparent_Cutout.cs" t="Include" />
+              </e>
+              <e p="PreShaderPropExporter.cs" t="Include" />
+              <e p="ShaderProps.cs" t="Include" />
+              <e p="VRM" t="Include">
+                <e p="PreExportShaders_VRM.cs" t="Include" />
+                <e p="VRM_MToon.cs" t="Include" />
+                <e p="VRM_UnlitCutout.cs" t="Include" />
+                <e p="VRM_UnlitTexture.cs" t="Include" />
+                <e p="VRM_UnlitTransparent.cs" t="Include" />
+                <e p="VRM_UnlitTransparentZWrite.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -177,6 +207,7 @@
               <e p="Tests" t="Include">
                 <e p="JsonDeserializeTests.cs" t="Include" />
                 <e p="MaterialTests.cs" t="Include" />
+                <e p="TextureTests.cs" t="Include" />
                 <e p="UniGLTFTests.cs" t="Include" />
               </e>
               <e p="UniGLTFVersionMenu.cs" t="Include" />
@@ -239,10 +270,6 @@
                 <e p="MeshImporter.cs" t="Include" />
                 <e p="MeshWithMaterials.cs" t="Include" />
                 <e p="NodeImporter.cs" t="Include" />
-                <e p="ShaderPropExporter" t="Include">
-                  <e p="PreShaderPropExporter.cs" t="Include" />
-                  <e p="ShaderProps.cs" t="Include" />
-                </e>
                 <e p="ShaderStore.cs" t="Include" />
                 <e p="StaticMeshIntegrator.cs" t="Include" />
                 <e p="TextureConverter.cs" t="Include" />
@@ -254,14 +281,6 @@
                 <e p="TriangleUtil.cs" t="Include" />
                 <e p="UnityPath.cs" t="Include" />
                 <e p="ZipArchiveStorage.cs" t="Include" />
-              </e>
-              <e p="PreExportShaderProps" t="Include">
-                <e p="Standard.cs" t="Include" />
-                <e p="UniGLTF_UniUnlit.cs" t="Include" />
-                <e p="Unlit_Color.cs" t="Include" />
-                <e p="Unlit_Texture.cs" t="Include" />
-                <e p="Unlit_Transparent.cs" t="Include" />
-                <e p="Unlit_Transparent_Cutout.cs" t="Include" />
               </e>
               <e p="UniGLTFException.cs" t="Include" />
               <e p="UniGLTFVersion.cs" t="Include" />
@@ -371,6 +390,8 @@
                 <e p="GenericInvokeCallFactory.g.cs" t="Include" />
               </e>
               <e p="GenericCast.cs" t="Include" />
+              <e p="GenericConstructor.cs" t="Include" />
+              <e p="GenericDeserializer.cs" t="Include" />
               <e p="IFileSystemAccessor.cs" t="Include" />
               <e p="IFormatter.cs" t="Include" />
               <e p="IStore" t="Include">
@@ -468,6 +489,7 @@
                 <e p="VRMFirstPersonEditor.cs" t="Include" />
               </e>
               <e p="Format" t="Include">
+                <e p="VRMAOTMenu.cs" t="Include" />
                 <e p="vrmAssetPostprocessor.cs" t="Include" />
                 <e p="VRMAssetWriter.cs" t="Include" />
                 <e p="VRMExporterMenu.cs" t="Include" />
@@ -486,6 +508,7 @@
                 <e p="BoneMeshEraserWizard.cs" t="Include" />
                 <e p="MeshIntegrator.cs" t="Include" />
                 <e p="MeshIntegratorWizard.cs" t="Include" />
+                <e p="SkinnedMeshUtility.cs" t="Include" />
               </e>
               <e p="SpringBone" t="Include">
                 <e p="VRMSpringBoneColliderGroupEditor.cs" t="Include" />
@@ -508,6 +531,7 @@
               </e>
             </e>
             <e p="Scripts" t="Include">
+              <e p="AOTCall.g.cs" t="Include" />
               <e p="BlendShape" t="Include">
                 <e p="BlendShapeAvatar.cs" t="Include" />
                 <e p="BlendShapeBindingMerger.cs" t="Include" />
@@ -533,6 +557,7 @@
                 <e p="glTF_VRM_Material.cs" t="Include" />
                 <e p="glTF_VRM_Meta.cs" t="Include" />
                 <e p="glTF_VRM_SecondaryAnimation.cs" t="Include" />
+                <e p="glTF_VRMExtensions.cs" t="Include" />
                 <e p="VRMException.cs" t="Include" />
                 <e p="VRMExporter.cs" t="Include" />
                 <e p="VRMExportObject.cs" t="Include" />
@@ -542,7 +567,6 @@
                 <e p="VRMImporterContext.cs" t="Include" />
                 <e p="VRMMaterialExporter.cs" t="Include" />
                 <e p="VRMMaterialImporter.cs" t="Include" />
-                <e p="VRMPreShaderPropExporter.cs" t="Include" />
                 <e p="VRMSpecVersion.cs" t="Include" />
                 <e p="VRMVersion.cs" t="Include" />
                 <e p="VRMVersionPartial.cs" t="Include" />
@@ -566,13 +590,6 @@
                 <e p="VRMMeta.cs" t="Include" />
                 <e p="VRMMetaInformation.cs" t="Include" />
                 <e p="VRMMetaObject.cs" t="Include" />
-              </e>
-              <e p="PreExportShaderProps" t="Include">
-                <e p="VRM_MToon.cs" t="Include" />
-                <e p="VRM_UnlitCutout.cs" t="Include" />
-                <e p="VRM_UnlitTexture.cs" t="Include" />
-                <e p="VRM_UnlitTransparent.cs" t="Include" />
-                <e p="VRM_UnlitTransparentZWrite.cs" t="Include" />
               </e>
               <e p="SkinnedMeshUtility" t="Include">
                 <e p="BoneMeshEraser.cs" t="Include" />
