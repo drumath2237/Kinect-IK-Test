@@ -35,9 +35,11 @@ public class CalibrationManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
             CountText.text = (3 - i).ToString();
         }
+        CountText.text = "done.";
 
         var _body = _source.GetData().FirstOrDefault(b => b.IsTracked);
 
+        SetBoneTransform(Instantiate(jointObj), Kinect.JointType.Head, _body);
         SetBoneTransform(Instantiate(jointObj), Kinect.JointType.SpineShoulder, _body);
         SetBoneTransform(Instantiate(jointObj), Kinect.JointType.ElbowLeft, _body);
         SetBoneTransform(Instantiate(jointObj), Kinect.JointType.HandLeft, _body);
@@ -48,6 +50,8 @@ public class CalibrationManager : MonoBehaviour
         SetBoneTransform(Instantiate(jointObj), Kinect.JointType.AnkleLeft, _body);
         SetBoneTransform(Instantiate(jointObj), Kinect.JointType.KneeRight, _body);
         SetBoneTransform(Instantiate(jointObj), Kinect.JointType.AnkleRight, _body);
+
+        StartCoroutine(TransformJointToBodyBone(Kinect.JointType.SpineShoulder, _body));
     }
 
     Vector3 KPos2Vec3(Kinect.JointType type, Kinect.Body _body)
@@ -55,7 +59,7 @@ public class CalibrationManager : MonoBehaviour
         return new Vector3(
             _body.Joints[type].Position.X * 10f,
             _body.Joints[type].Position.Y * 10f,
-            _body.Joints[type].Position.Z
+            _body.Joints[type].Position.Z * 10f
         );
     }
 
@@ -75,6 +79,18 @@ public class CalibrationManager : MonoBehaviour
         obj.transform.rotation = Vec4ToQ(type, _body);
 
         obj.name = type.ToString();
+    }
+
+    IEnumerator TransformJointToBodyBone(Kinect.JointType joint, Kinect.Body _body)
+    {
+        Matrix4x4 mat = Matrix4x4.identity;
+        mat.m03 = -_body.Joints[joint].Position.X;
+        mat.m13 = -_body.Joints[joint].Position.Y;
+        mat.m23 = -_body.Joints[joint].Position.Z;
+
+        Debug.Log(mat);
+
+        yield return null;
     }
 
 }
